@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html, body {
+    height:100vh;
+    width: 100%;
+    background-color: #FF8C00;
+    scroll-behavior: smooth;
+}
+
+#logoMain {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 2.1rem;
+}
+
+nav {
+    background-color: #FF8C00;
+    height: 10vh;
+}
+
+#logo {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 2.1rem;
+}
+
+.nav-link {
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.1rem;
+}
+
+#hero {
+    height: 83vh;
+    background-color: #FF8C00;
+    display: flex;
+    justify-content: center;
+}
+
+#hero .item {
+    width: 34%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+#hero a {
+    font-family: 'JetBrains Mono', monospace;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 4vw;
+    color: white;
+    padding: 0 5%;
+    z-index: 2;
+}
+
+#hero a:hover {
+    font-size: 5vw;
+    text-decoration: none;
+    transition: linear 0.3s all;
+}
+
+#favsHero {
+    background-image: url("images/favs.jpg");
+    position: relative;
+}
+
+#favsHero::after {
+  content: "";
+  background-color: yellow;
+  opacity: 0.15;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+#nowHero {
+    background-image: url("images/now.png");
+    background-position: center;
+    position: relative;
+}
+
+#nowHero::after {
+  content: "";
+  background-color: darkblue;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+#hobbiesHero {
+    background-image: url("images/skate.jpg");
+    background-position: center;
+    position: relative;
+}
+
+#hobbiesHero::after {
+  content: "";
+  background-color: lightpink;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    height: 7vh;
+}
+
+.arrow a {
+    color: white;
+    font-size: 2rem;
+}
+
+.arrow a:hover {
+    text-decoration: none;
+    transition: linear 0.3s all;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#about {
+    background: linear-gradient(180deg, rgba(255,140,0,1) 0%, rgba(255,255,255,1) 14%, rgba(255,255,255,1) 100%);
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+}
+
+#about .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15vh;
+}
+
+#about .item h1 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 5rem;
+    padding-bottom: 3vh;
+}
+
+#about .item p {
+    text-align: center;
+    width: 60vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+#map {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    height: 50vh;
+    width: 70vw;
+}
+
+#birthdays {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#birthdays .item img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 100px;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#social a {
+    padding: 1rem;
+}
+
+#hobbiesJumbo {
+    height: 83vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hobbiesJumbo h1 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15vw;
+    color: #fff;
+}
+
+#person {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 100px;
+}
+
+#video {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    width: 50vw;
+    height: 50vh;
+}
+
+#embed {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+#site {
+    width: 70vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+#js1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#js1 button {
+    margin: 5% 2%;
+    padding: 2%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    background: #fff;
+    border: 0;
+}
+
+#js1 button:hover {
+    color: white;
+    font-weight: bold;
+    transition: 0.3s all ease;
+}
+
+#pink:hover  {
+    background: pink;
+}
+
+#purple:hover  {
+    background: purple;
+}
+
+#yellow:hover  {
+    background: yellow;
+}
+
+#blue:hover  {
+    background: blue;
+}
+
+#red:hover  {
+    background: red;
+}
+
+#js2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#js2 form {
+    margin: 5%;
+    font-size: 1.5rem;
+}

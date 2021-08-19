@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8">
+
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Playground · Rodrigo LoGar</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <span id="logo" class="navbar-brand mb-0 h1">rOdRIGo LoGAr</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="favs.html">Favorites</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="now.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Playground<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="hobbiesJumbo" class="container-fluid">
+                <h1 class="animated bounceInRight">Playground</h1>
+            </div>
+            <div class="arrow">
+                <a class="animated infinite tada delay-2s" href="#about">v</a>
+            </div>
+            <div id="about" class="container-fluid">
+                <div class="item">
+                    <h1 id="colorDiv">Change Color</h1>
+                    <div id="js1" class="container">
+                        <button id="pink">Pink</button>
+                        <button id="purple">Purple</button>
+                        <button id="yellow">Yellow</button>
+                        <button id="blue">Blue</button>
+                        <button id="red">Red</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <h1>¿Cuál es tu nombre?</h1>
+                    <div id="js2" class="container">
+                        <form>
+                            <input id="input" autocomplete="off" placeholder="Nombre" type="text">
+                        </form>
+                        <p id="name"></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div id="social" class="container">
+                        <div class="item">
+                            <a href="https://www.instagram.com/rodrigologar/?hl=es" target="_blank" rel="noreferrer noopener">
+                                <img src="images/instagram.png" alt="Instagram">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://www.facebook.com/ro.logar.3/" target="_blank" rel="noreferrer noopener">
+                                <img src="images/facebook.png" alt="Facebook">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://github.com/rodrigologar" target="_blank" rel="noreferrer noopener">
+                                <img src="images/github.png" alt="Github">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>
+
+            let body = document.querySelector('#colorDiv');
+            document.querySelector('#pink').onclick = function() {
+                body.style.color = 'pink';
+            };
+            document.querySelector('#purple').onclick = function() {
+                body.style.color = 'purple';
+            };
+            document.querySelector('#yellow').onclick = function() {
+                body.style.color = 'yellow';
+            };
+            document.querySelector('#blue').onclick = function() {
+                body.style.color = 'blue';
+            };
+            document.querySelector('#red').onclick = function() {
+                body.style.color = 'red';
+            };
+
+            let input = document.querySelector('#input');
+            input.addEventListener('keyup', function(event) {
+                let name = document.querySelector('#name');
+                if (input.value) {
+                    name.innerHTML = `¡Hola, ${input.value}!`;
+                }
+                else {
+                    name.innerHTML = `¡Hola, humano cualquiera!`
+                }
+            });
+
+        </script>
+    </body>
+</html>
